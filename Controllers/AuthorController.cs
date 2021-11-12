@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using dbConnectionTest.Models;
 using System.Web.Mvc;
-using dbConnectionTest.Models;
 
 namespace dbConnectionTest.Controllers
 {
