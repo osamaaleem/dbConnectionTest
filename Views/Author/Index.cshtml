@@ -1,0 +1,50 @@
+﻿@model dbConnectionTest.Models.MAuthor
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm()) { 
+<table>
+    <tr>
+        <td>Name : </td>
+        <td>@Html.TextBoxFor(x => x.Name)</td>
+    </tr>
+    <tr>
+        <td>Age : </td>
+        <td>@Html.TextBoxFor(x => x.Age)</td>
+    </tr>
+    <tr>
+        <td>Gender : </td>
+        <td>@Html.TextBoxFor(x => x.Gender)</td>
+    </tr>
+    <tr>
+        <td>Book Name : </td>
+        <td>@Html.TextBoxFor(x => x.BookName)</td>
+    </tr>
+    <tr>
+        <td>Book Price : </td>
+        <td>@Html.TextBoxFor(x => x.BookPrice)</td>
+    </tr>
+    <tr>
+        <td>Publisher : </td>
+        <td>@Html.TextBoxFor(x => x.Publisher)</td>
+    </tr>
+    <tr>
+        <td>Publish Year : </td>
+        <td>@Html.TextBoxFor(x => x.PublishYear)</td>
+    </tr>
+    <tr>
+        <td>Book Type : </td>
+        <td>@Html.DropDownListFor(x => x.BookType, (List<SelectListItem>)@ViewBag.bookTypeList, "Book Type")</td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Submit" /></td>
+    </tr>
+</table>
+}
+
+
+
+
+
